@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _printf - simulate printf function in the std library.
+ * @format: passed string which contains 0 or more %.
+ *
+ * Return: printed characters count.
+ */
 int _printf(const char *format, ...)
 {
 	int i = 0, count = 0;
