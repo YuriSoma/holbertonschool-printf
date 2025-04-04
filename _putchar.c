@@ -5,7 +5,7 @@
  * _putchar - prints to std the passed character.
  * @c: passed character when it called.
  *
- * descreption: works similer to putchar funtion in std library.
+ * description: works similer to putchar funtion in std library.
  * Return: printing to the console.
  */
 int _putchar(char c)
