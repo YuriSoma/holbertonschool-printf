@@ -35,14 +35,12 @@ int _printf(const char *format, ...)
 				case '\0':
 					return (-1);
 				default:
-					_putchar(format[i]);
-					count++;
-					i++;
-					continue;
+					goto Here;
 			}
 			i += 2;
 			continue;
 		}
+Here:
 		_putchar(format[i]);
 		count++;
 		i++;
