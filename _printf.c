@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 					count++;
 					break;
 				default:
-					return (0);
+					return (-1);
 			}
 			i += 2;
 			continue;
