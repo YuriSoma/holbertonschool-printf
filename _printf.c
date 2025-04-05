@@ -33,6 +33,8 @@ int _printf(const char *format, ...)
 					_putchar('%');
 					count++;
 					break;
+				default:
+					return (0);
 			}
 			i += 2;
 			continue;
