@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 					_putchar('%');
 					count++;
 					break;
-				default:
+				case '\0':
 					return (-1);
 			}
 			i += 2;
