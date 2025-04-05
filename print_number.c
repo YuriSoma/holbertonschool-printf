@@ -1,27 +1,33 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer using _putchar.
- * @n: the integer to print.
+ * print_number - Prints an integer using _putchar
+ * @n: The integer to print
  *
- * Return: number of characters printed.
+ * Return: Number of characters printed
  */
 int print_number(int n)
 {
 	int count = 0;
 
+	if (n == -2147483648)
+	{
+		count += _putchar('-');
+		count += _putchar('2');
+		count += print_number(147483648);
+		return (count);
+	}
+
 	if (n < 0)
 	{
-		_putchar('-');
-		count++;
+		count += _putchar('-');
 		n = -n;
 	}
 
 	if (n / 10)
 		count += print_number(n / 10);
 
-	_putchar((n % 10) + '0');
-	count++;
+	count += _putchar((n % 10) + '0');
 
 	return (count);
 }
