@@ -34,7 +34,8 @@ int _printf(const char *format, ...)
 					count++;
 					break;
 				default:
-					print_string("Error, unexpected specifier!!");
+					i++;
+					continue;
 			}
 			i += 2;
 			continue;
