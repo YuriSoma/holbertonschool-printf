@@ -35,6 +35,10 @@ int _printf(const char *format, ...)
 					break;
 				case '\0':
 					return (-1);
+				default:
+					_putchar(format[i]);
+					i++;
+					continue;
 			}
 			i += 2;
 			continue;
