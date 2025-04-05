@@ -1,0 +1,25 @@
+% _printf(3)          printf function simulation           _printf(3)
+
+name
+       _printf - Simulates the standard printf function.
+synopsis
+       int _printf(const char *format, ...);
+description
+       The _printf function produces output according to a format string,
+       which can include ordinary characters and special format specifiers.
+       The following format specifiers are supported:
+       - %c: Prints a single character.
+       - %s: Prints a string.
+       - %d: Prints a signed decimal integer.
+       - %i: Prints a signed integer (same as %d).
+       - %%: Prints a percent sign.
+
+       It does not handle field width, precision, or length modifiers.
+
+reture value
+       The function returns the total number of characters printed
+       (excluding the null byte used to end strings).
+
+examples
+       _printf("hello %s\n", "there");
+       _printf("Number: %d\n", 13);
