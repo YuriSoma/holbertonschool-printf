@@ -9,8 +9,7 @@
 int _printf(const char *format, ...)
 {
 	int i = 0, count = 0;
-	char ch;
-	char *str;
+	char ch, *str;
 	va_list ap;
 
 	va_start(ap, format);
@@ -37,7 +36,8 @@ int _printf(const char *format, ...)
 					return (-1);
 				default:
 					_putchar(format[i]);
-					count++; i++;
+					count++;
+					i++;
 					continue;
 			}
 			i += 2;
